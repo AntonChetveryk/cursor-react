@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-const values = [];
-
 function Input() {
   const [value, changeValue] = useState("");
+  const [values, setValues] = useState([]);
 
   function onChange(e) {
     changeValue(e.target.value);
@@ -12,7 +11,7 @@ function Input() {
   function onClick(e) {
     e.preventDefault();
     if (value !== "") {
-      values.push(value);
+      setValues(prevValues => [...prevValues, value]);
       changeValue("");
     }
   }
