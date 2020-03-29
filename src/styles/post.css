@@ -15,10 +15,15 @@
   margin: auto;
 }
 
-.like {
-  width: 80px;
+.icons {
+  width: 5%;
 }
 
 .App {
   display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
 }
