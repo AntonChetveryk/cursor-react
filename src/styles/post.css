@@ -1,0 +1,24 @@
+* {
+  color: floralwhite;
+}
+
+.card {
+  background-color: darkslategray;
+}
+
+.post-header {
+  display: flex;
+}
+
+.main-img {
+  display: block;
+  margin: auto;
+}
+
+.like {
+  width: 80px;
+}
+
+.App {
+  display: flex;
+}
