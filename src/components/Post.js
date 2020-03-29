@@ -19,7 +19,8 @@ export const Post = props => {
             <img src={ANAKIN_IMAGE} alt="img" className="col-3" />
             <CardText className="col-9 text-justify">
               Anakin Skywalker
-              <p>WTF? Who is Ray? Why she is Skywalker? Luke...?</p>
+              <br />
+              <span>WTF? Who is Ray? Why she is Skywalker? Luke...?</span>
             </CardText>
           </div>
         </CardBody>
