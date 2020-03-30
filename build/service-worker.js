@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AntonChetveryk/cursor-react/precache-manifest.6e2e774f97eaf498d45a26fccdc3dbd7.js"
+  "/AntonChetveryk/cursor-react/precache-manifest.1914f77f8a904655d8cc022551e73bfa.js"
 );
 
 self.addEventListener('message', (event) => {
