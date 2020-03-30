@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/AntonChetveryk/cursor-react/static/css/main.a7bae26d.chunk.css",
-    "main.js": "/AntonChetveryk/cursor-react/static/js/main.9766077d.chunk.js",
-    "main.js.map": "/AntonChetveryk/cursor-react/static/js/main.9766077d.chunk.js.map",
-    "runtime~main.js": "/AntonChetveryk/cursor-react/static/js/runtime~main.91e42509.js",
-    "runtime~main.js.map": "/AntonChetveryk/cursor-react/static/js/runtime~main.91e42509.js.map",
-    "static/css/2.de424728.chunk.css": "/AntonChetveryk/cursor-react/static/css/2.de424728.chunk.css",
-    "static/js/2.f23c83be.chunk.js": "/AntonChetveryk/cursor-react/static/js/2.f23c83be.chunk.js",
-    "static/js/2.f23c83be.chunk.js.map": "/AntonChetveryk/cursor-react/static/js/2.f23c83be.chunk.js.map",
-    "index.html": "/AntonChetveryk/cursor-react/index.html",
-    "precache-manifest.1914f77f8a904655d8cc022551e73bfa.js": "/AntonChetveryk/cursor-react/precache-manifest.1914f77f8a904655d8cc022551e73bfa.js",
-    "service-worker.js": "/AntonChetveryk/cursor-react/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/AntonChetveryk/cursor-react/static/css/2.de424728.chunk.css.map",
-    "static/css/main.a7bae26d.chunk.css.map": "/AntonChetveryk/cursor-react/static/css/main.a7bae26d.chunk.css.map"
+    "main.css": "/cursor-react/static/css/main.a7bae26d.chunk.css",
+    "main.js": "/cursor-react/static/js/main.9766077d.chunk.js",
+    "main.js.map": "/cursor-react/static/js/main.9766077d.chunk.js.map",
+    "runtime~main.js": "/cursor-react/static/js/runtime~main.c4dab206.js",
+    "runtime~main.js.map": "/cursor-react/static/js/runtime~main.c4dab206.js.map",
+    "static/css/2.de424728.chunk.css": "/cursor-react/static/css/2.de424728.chunk.css",
+    "static/js/2.f23c83be.chunk.js": "/cursor-react/static/js/2.f23c83be.chunk.js",
+    "static/js/2.f23c83be.chunk.js.map": "/cursor-react/static/js/2.f23c83be.chunk.js.map",
+    "index.html": "/cursor-react/index.html",
+    "precache-manifest.6a6a2eb8bc90ceab554f89123975e8d1.js": "/cursor-react/precache-manifest.6a6a2eb8bc90ceab554f89123975e8d1.js",
+    "service-worker.js": "/cursor-react/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/cursor-react/static/css/2.de424728.chunk.css.map",
+    "static/css/main.a7bae26d.chunk.css.map": "/cursor-react/static/css/main.a7bae26d.chunk.css.map"
   }
 }
