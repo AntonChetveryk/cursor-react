@@ -1,29 +1,10 @@
-* {
-  color: floralwhite;
-}
-
-.card {
-  background-color: darkslategray;
-}
-
-.post-header {
-  display: flex;
-}
-
-.main-img {
-  display: block;
-  margin: auto;
-}
-
 .icons {
-  width: 5%;
+  width: 30px;
 }
 
-.App {
-  display: flex;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-around;
+.footer span {
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 18px;
 }

@@ -1,38 +1,69 @@
 import React from "react";
-import { Card, CardText, CardBody } from "reactstrap";
+
 import like from "../img/like.png";
 import share from "../img/share.png";
 import comment from "../img/comment.png";
+import { store } from "../redux/store";
 
-const ANAKIN_IMAGE =
-  "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Anakin-Jedi.jpg/220px-Anakin-Jedi.jpg";
+export const Post = (props) => {
+  const {
+    author,
+    autorSrc,
+    nickname,
+    date,
+    postText,
+    postSrc,
+    likes,
+    comments,
+    reposts,
+  } = store.getState();
 
-const RAY_IMAGE =
-  "https://specials-images.forbesimg.com/imageserve/5e63b3c8e1e617000759130e/960x0.jpg?fit=scale";
-
-export const Post = props => {
   return (
-    <div className="container">
-      <Card className="mt-4 card">
-        <CardBody>
-          <div className="row">
-            <img src={ANAKIN_IMAGE} alt="img" className="col-3" />
-            <CardText className="col-9 text-justify">
-              Anakin Skywalker
-              <br />
-              <span>WTF? Who is Ray? Why she is Skywalker? Luke...?</span>
-            </CardText>
-          </div>
-        </CardBody>
-        <img width="80%" src={RAY_IMAGE} alt="img" className="main-img" />
-        <CardBody>
-          <div className="footer">
-            <img src={like} alt="img" className="icons" />
-            <img src={comment} alt="img" className="icons" />
-            <img src={share} alt="img" className="icons" />
-          </div>
-        </CardBody>
-      </Card>
+    <div
+      className="post-container"
+      style={{
+        backgroundColor: "darkolivegreen",
+        color: "white",
+        padding: "30px 20px",
+        fontSize: "14px",
+      }}
+    >
+      <div className="row">
+        <img src={autorSrc} alt="img" className="col-3 rounded-circle" />
+        <div className="col-9">
+          <p>
+            <b className="mr-2">{author}</b>
+            <span className="mr-2">{nickname}</span>
+            <span>{date}</span>
+          </p>
+          <p>{postText}</p>
+        </div>
+      </div>
+      <img
+        src={postSrc}
+        alt="img"
+        className="my-3"
+        style={{
+          display: "block",
+          width: "80%",
+          margin: "auto",
+          height: "180px",
+        }}
+      />
+      <div className="footer d-flex justify-content-around">
+        <div className="d-flex align-items-center">
+          <img src={like} alt="img" className="icons" />
+          <span>{likes}</span>
+        </div>
+        <div className="d-flex align-items-center">
+          <img src={comment} alt="img" className="icons" />
+          <span>{comments}</span>
+        </div>
+        <div className="d-flex align-items-center">
+          <img src={share} alt="img" className="icons" />
+          <span>{reposts}</span>
+        </div>
+      </div>
     </div>
   );
 };
