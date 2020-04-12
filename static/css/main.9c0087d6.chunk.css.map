@@ -1,0 +1,1 @@
+{"version":3,"sources":["post.css"],"names":[],"mappings":"AAAA,OACE,UACF,CAEA,aACE,UAAY,CACZ,eAAiB,CACjB,gBAAiB,CACjB,cACF","file":"main.9c0087d6.chunk.css","sourcesContent":[".icons {\r\n  width: 30px;\r\n}\r\n\r\n.footer span {\r\n  color: black;\r\n  font-weight: bold;\r\n  margin-left: 10px;\r\n  font-size: 18px;\r\n}\r\n"]}
