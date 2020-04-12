@@ -4,6 +4,7 @@ import like from "../img/like.png";
 import share from "../img/share.png";
 import comment from "../img/comment.png";
 import { store } from "../redux/store";
+import { updateLikes, updateReposts, updateComments } from "../redux/actions";
 
 export const Post = (props) => {
   const {
@@ -29,7 +30,12 @@ export const Post = (props) => {
       }}
     >
       <div className="row">
-        <img src={autorSrc} alt="img" className="col-3 rounded-circle" />
+        <img
+          src={autorSrc}
+          alt="img"
+          className="col-3 rounded-circle"
+          style={{ height: "100px" }}
+        />
         <div className="col-9">
           <p>
             <b className="mr-2">{author}</b>
@@ -52,15 +58,30 @@ export const Post = (props) => {
       />
       <div className="footer d-flex justify-content-around">
         <div className="d-flex align-items-center">
-          <img src={like} alt="img" className="icons" />
+          <img
+            src={like}
+            alt="img"
+            className="icons"
+            onClick={() => store.dispatch(updateLikes())}
+          />
           <span>{likes}</span>
         </div>
         <div className="d-flex align-items-center">
-          <img src={comment} alt="img" className="icons" />
+          <img
+            src={comment}
+            alt="img"
+            className="icons"
+            onClick={() => store.dispatch(updateComments())}
+          />
           <span>{comments}</span>
         </div>
         <div className="d-flex align-items-center">
-          <img src={share} alt="img" className="icons" />
+          <img
+            src={share}
+            alt="img"
+            className="icons"
+            onClick={() => store.dispatch(updateReposts())}
+          />
           <span>{reposts}</span>
         </div>
       </div>

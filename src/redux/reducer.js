@@ -1,3 +1,5 @@
+import { store } from "../redux/store";
+
 const initialState = {
   author: "Anakin Skywalker",
   autorSrc:
@@ -13,13 +15,22 @@ const initialState = {
 };
 
 export const reducer = (state = initialState, action) => {
+  let { likes, comments, reposts } = state;
+
   switch (action.type) {
     case "UPDATE_DATA":
       return {
         ...state,
-        postText: action.payload.postText,
-        postSrc: action.payload.postSrc,
+        postText: action.payload.postText || initialState.postText,
+        postSrc: action.payload.postSrc || initialState.postSrc,
+        autorSrc: action.payload.autorSrc,
       };
+    case "UPDATE_LIKES":
+      return { ...state, likes: ++likes };
+    case "UPDATE_REPOSTS":
+      return { ...state, reposts: ++reposts };
+    case "UPDATE_COMMENTS":
+      return { ...state, comments: ++comments };
   }
   return state;
 };

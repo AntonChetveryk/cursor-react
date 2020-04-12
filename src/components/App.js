@@ -9,7 +9,6 @@ import { store } from "../redux/store";
 export default class App extends Component {
   componentDidMount() {
     store.subscribe(() => {
-      console.log("new", store.getState());
       this.forceUpdate();
     });
   }
