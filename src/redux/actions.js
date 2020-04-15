@@ -1,5 +1,5 @@
-export const updateData = (payload) => {
-  return { type: "UPDATE_DATA", payload };
+export const addData = (payload) => {
+  return { type: "ADD_DATA", payload };
 };
 
 export const updateLikes = () => {

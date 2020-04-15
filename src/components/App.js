@@ -14,15 +14,20 @@ export default class App extends Component {
   }
 
   render() {
+    const { posts } = store.getState();
     return (
-      <div className="container-fluid">
+      <div className="container">
         <div className="row pt-2">
-          <div className="col-6">
+          <div className="col-5 mx-2 mt-2">
             <Form />
           </div>
-          <div className="col-6">
-            <Post />
-          </div>
+          {posts.map((post) => (
+            <Post
+              postText={post.postText}
+              postSrc={post.postSrc}
+              autorSrc={post.autorSrc}
+            />
+          ))}
         </div>
       </div>
     );

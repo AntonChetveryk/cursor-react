@@ -8,20 +8,16 @@ import { updateLikes, updateReposts, updateComments } from "../redux/actions";
 
 export const Post = (props) => {
   const {
-    author,
-    autorSrc,
-    nickname,
-    date,
-    postText,
-    postSrc,
+    post: { author, nickname, date },
     likes,
     comments,
     reposts,
   } = store.getState();
+  const { postSrc, autorSrc, postText } = props;
 
   return (
     <div
-      className="post-container"
+      className="post-container col-5 mx-2 mt-2"
       style={{
         backgroundColor: "darkolivegreen",
         color: "white",
