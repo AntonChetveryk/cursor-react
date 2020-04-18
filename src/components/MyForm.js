@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import { store } from "../redux/store";
-import { updateData } from "../redux/actions";
+import { addData } from "../redux/actions";
 
 class MyForm extends React.Component {
   state = {
@@ -18,7 +18,7 @@ class MyForm extends React.Component {
   onClick = (e) => {
     const { postText, postSrc, autorSrc } = this.state;
     e.preventDefault();
-    store.dispatch(updateData({ postText, postSrc, autorSrc }));
+    store.dispatch(addData({ postText, postSrc, autorSrc }));
   };
 
   render() {
